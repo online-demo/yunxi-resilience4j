@@ -18,7 +18,7 @@ public class TestRateLimiter {
         // RateLimiter配置文件
         RateLimiterConfig config = RateLimiterConfig.custom()
                 // 请求等待的超时时间
-                .timeoutDuration(Duration.ofMillis(10000))
+                .timeoutDuration(Duration.ofMillis(2000))
                 // RateLimiter刷新频率
                 .limitRefreshPeriod(Duration.ofMillis(200))
                 // 并发是1
